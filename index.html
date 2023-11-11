@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <p class="heading">Rock Paper Scissors</p>
+    <button class="rps" onclick="result('✊')">✊</button>
+    <button class="rps" onclick="result('✋')">✋</button>
+    <button class="rps" onclick="result('✌️')">✌️</button>
+    <p class="result result-txt"></p>
+    <p class="choosen-emo choosen"></p>
+    <p class="count result-count"></p>
+    <button class="reset"
+     onclick="
+     count.win = 0;
+     count.loose = 0;
+     count.tie = 0;
+     localStorage.removeItem('count');
+     resetFun();">
+        Reset Score
+    </button>
+    <script src="index.js"></script>
+</body>
+</html>
